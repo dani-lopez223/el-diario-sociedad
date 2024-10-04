@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('general-media/fonts/open-sans/OpenSans-Light.ttf');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('general-media/fonts/open-sans/OpenSans-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('general-media/fonts/open-sans/OpenSans-Semibold.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('general-media/fonts/open-sans/OpenSans-Bold.ttf');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('general-media/fonts/open-sans/OpenSans-ExtraBold.ttf');
+    font-weight: 1000;
+}
+
+
+/* //_>> */
+
+
+@font-face {
+    font-family: 'Glonimove';
+    src: url('general-media/fonts/glonimove/glonimove-light.otf');
+    font-weight: 200;
+}
+
+
+@font-face {
+    font-family: 'Glonimove';
+    src: url('general-media/fonts/glonimove/glonimove-regular.otf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Glonimove';
+    src: url('general-media/fonts/glonimove/glonimove-semibold.otf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Glonimove';
+    src: url('general-media/fonts/glonimove/glonimove-bold.otf');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Glonimove';
+    src: url('general-media/fonts/glonimove/glonimove-black.otf');
+    font-weight: 1000;
+}
+
+
+/* //_>> */
+
+
+@font-face {
+    font-family: 'Vermi';
+    src: url('general-media/fonts/vermiglione/Vermiglione-Regular.ttf');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Vermi';
+    src: url('general-media/fonts/vermiglione/Vermiglione-Medium.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Vermi';
+    src: url('general-media/fonts/vermiglione/Vermiglione-SemiBold.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Vermi';
+    src: url('general-media/fonts/vermiglione/Vermiglione-Bold.ttf');
+    font-weight: 800;
+}

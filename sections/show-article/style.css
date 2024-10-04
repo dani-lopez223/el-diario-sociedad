@@ -1,0 +1,892 @@
+/* ✉ ♫ -_  Declaro variables de colores en la raíz del documento  _- ♫ ✉ */
+:root {
+    /* Colores principales: */
+    --main-bg-color: #f2f2f2ff;
+    --mG-brightExtra: #acacac;
+    --mG-bright: #808080ff;
+    --mG-mid: #4d4d4dff;
+    --mG-dark: #333333ff;
+    
+    /* Fuentes a usar en la página: 
+    
+    'Rozha One' , 
+    'Glonimove', 
+    'Open Sans' 
+    
+    */
+}
+
+
+
+/* ✉ ♫ -_  Ajustes en las secciones principales  _- ♫ ✉ */
+
+
+body {
+    margin: 0;
+    font-family: 'Work Sans';
+    background-color: var(--main-bg-color);
+}
+
+header {
+    background-color: #fff;
+    padding-top: 25px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    margin: 50px auto;
+}
+
+footer {
+    background-color: #fff;
+    display: flex;
+    padding: 50px;
+    padding-bottom: 30px;
+    margin-top: 150px;
+    justify-content: space-evenly;
+}
+
+.section-divs {
+    margin: 85px 0;
+}
+
+.section-divs-d {
+    border-bottom: solid 1px var(--mG-brightExtra);
+}
+
+
+/* ✉ ♫ -_  Ajustes en las secciones principales  _- ♫ ✉ */
+
+
+
+/* ✉ ♫ -_  Menu de navegación / tópicos  _- ♫ ✉ */
+
+
+/* - Imagen del logo del diario (ficticio) - */
+.logo-image {
+    display: flex;
+    width: 12%;
+    margin: auto;
+}
+
+/* - Contenedor de los enlaces hacia los tópicos - */
+.topics-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 40px;
+    font-size: 0.8rem;
+    padding-top: 23px;
+}
+
+/* - Enlaces hacia los tópicos - */
+.topics-container a {
+    color: #000;
+    text-decoration: none;
+    transition: color .25s;
+    font-weight: 500;
+}
+
+.topics-container a:hover, .topics-container a:focus {
+    outline: none;
+    color: var(--mG-brightExtra);
+}
+
+/* - Contenido - */
+.topics-button__normal {
+    align-self: center;
+}
+
+/* - Enlace hacia la suscripción al diario (ficticio) - */
+.topics-button__bordered {
+    border: solid 1px #000;
+    padding: 5px 10px;
+}
+
+.topics-button__bordered:hover, .topics-button__bordered:focus {
+    outline: none;
+    background-color: #000;
+    border: solid 1px #000;
+    padding: 5px 10px;
+}
+
+
+/* ✉ ♫ -_  Menu de navegación / tópicos  _- ♫ ✉ */
+
+
+
+/* ✉ ♫ -_  Sección de la noticia que fue abierta  _- ♫ ✉ */
+
+
+.opened-info {
+    padding-left: 25px;
+}
+
+.opened-info__tag {
+    display: flex;
+    color: var(--mG-bright);
+    font-size: .7rem;
+    margin: 10px 0;
+    text-decoration: none;
+    transition: color .2s;
+}
+
+.opened-info__tag:hover, .opened-info__tag:focus {
+    color: var(--mG-dark);
+    text-decoration: underline;
+}
+
+.opened-info__header {
+    font-family: 'Rozha One';
+    font-size: 2.2rem;
+    font-style: italic;
+    line-height: 2rem;
+    margin: 0;
+    width: 100%;
+}
+
+.opened-info__sub-tag {
+    display: flex;
+    gap: 30px;
+}
+
+.opened-info__sub-tag h3 {
+    font-size: .8rem;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+.opened-info__sub-tag h3 a, .opened-info__sub-tag h3 span {
+    color: var(--mG-bright);
+    text-decoration: none;
+    transition: color .2s;
+}
+
+.opened-info__sub-tag h3 a:hover, .opened-info__sub-tag h3 a:focus {
+    color: var(--mG-dark);
+    text-decoration: underline;
+}
+
+.opened-info__image {
+    display: flex;
+    background-color: var(--mG-bright);
+    width: 750px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.opened-info__desc {
+    margin: 25px 0;
+}
+
+.opened-info__desc p {
+    font-size: .87rem;
+    text-align: justify;
+    padding: 15px 0;
+    width: 97%;
+}
+
+
+/* ✉ ♫ -_  Sección de la noticia que fue abierta  _- ♫ ✉ */
+
+
+
+/* ✉ ♫ -_  Sección de más noticias / de interés  _- ♫ ✉ */
+
+
+.more-news__container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, 800px));
+    grid-template-rows: repeat(3, minmax(min-content, 250px));
+    justify-items: center;
+    gap: 20px;
+}
+
+/* - Artículos / contenedor - */
+.recent-info {
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 0;
+    transition: background-color .4s, padding .5s;
+}
+
+.recent-info:hover {
+    background-color: var(--mG-dark);
+    padding-bottom: 20px;
+    margin: 10px;
+}
+
+/* - Imágen del artículo - */
+.recent-info__image {
+    background: var(--mG-bright);
+    width: 300px;
+    height: 160px;
+    border-radius: 10px;
+}
+
+/* - Fecha del artículo - */
+.recent-info__dateof {
+    color: var(--mG-mid);
+    font-size: .67rem;
+    font-weight: 500;
+    margin: 10px 5px;
+    margin-bottom: 5px;
+}
+
+/* - Título / encabezado del artículo - */
+.recent-info__title {
+    font-family: 'Rozha One';
+    text-align: center;
+    font-size: 1.28rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 20px;
+    margin: 10px 0;
+    margin-top: 5px;
+    transition: color .2s;
+}
+
+/* - Subtítulos (fecha / autor) del artículo - */
+.recent-info__sub-titles {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+/* - Subtítulos (fecha / autor) del artículo (h5) - */
+.recent-info__sub-titles h5 {
+    margin: 6px;
+    font-size: .75rem;
+    font-weight: 500;
+}
+
+/* - Etiqueta / tópico del artículo y autor del mismo - */
+.sub-tag, .sub-author {
+    margin: 6px;
+    font-size: .75rem;
+    font-weight: 500;
+    transition: color .17s;
+}
+
+.sub-tag:hover, .sub-tag:focus {
+    outline: none;
+    color: var(--mG-brightExtra);
+    text-decoration: underline;
+}
+
+.sub-author:hover, .sub-author:focus {
+    outline: none;
+    color: var(--mG-brightExtra);
+    text-decoration: underline;
+}
+
+/* - Color al contenido de los subtítulos - */
+.recent-info__sub-titles a, .recent-info__sub-titles h5 span {
+    color: var(--mG-bright);
+    text-decoration: none;
+}
+
+/* - Botón 'Ver esta noticia' - */
+.t-watch-news__btn {
+    display: none;
+    color: var(--mG-dark);
+    text-decoration: none;
+    font-size: .83rem;
+    font-weight: 400;
+    margin: auto;
+    background-color: #fff;
+    border: solid 1px var(--mG-brightExtra);
+    padding: 10px;
+    width: 90%;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 15px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.t-watch-news__btn:hover, .t-watch-news__btn:focus {
+    outline: none;
+    box-shadow: inset 30em 0 0 0 var(--mG-dark);
+    color: #fff;
+}
+
+
+/* ✉ ♫ -_  Sección de más noticias / de interés  _- ♫ ✉ */
+
+
+
+/* ✉ ♫ -_  Noticia ancha  _- ♫ ✉ */
+
+
+/* - Contenedor del artículo - */
+.single-info__content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 10px 0;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    transition: padding .4s, background-color .3s;
+}
+
+.single-info__content:hover {
+    color: #e6e6e6ff;
+    background-color: var(--mG-dark);
+    padding: 30px 0;
+}
+
+/* - top - */
+.single-info__top {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+/* - Tópico / Etiqueta del artículo - */
+.single-info__tag {
+    font-size: .6rem;
+    text-decoration: none;
+    color: var(--mG-mid);
+    font-weight: 500;
+    transition: color .3s;
+}
+
+.single-info__tag:hover, .single-info__tag:focus {
+    outline: none;
+    text-decoration: underline;
+}
+
+/* - Titulo / Encabezado del artículo - */
+.single-info__header {
+    font-family: 'Rozha One';
+    font-weight: 800;
+    font-size: 1.7rem;
+    font-style: italic;
+    line-height: 1.6rem;
+    margin: 13px 0;
+    margin-top: 5px;
+    transition: color .3s;
+}
+
+/* - Imagen del artículo - */
+.single-info__image {
+    width: 340px;
+    height: 240px;
+    background: var(--mG-bright);
+    border-radius: 12px;
+    grid-area: mN-image;
+}
+
+/* - Información / descripción del artículo - */
+.single-info__side-content {
+    width: 46%;
+    justify-content: center;
+    align-content: center;
+    grid-area: mN-side-content;
+}
+
+/* - Botón de 'Ver esta noticia' - */
+.watch-news__btn {
+    display: none;
+    color: var(--mG-dark);
+    background-color: #fff;
+    font-size: .8rem;
+    font-weight: 400;
+    grid-area: mN-button;
+    width: 89%;
+    margin: auto;
+    justify-content: center;
+    padding: 12px;
+    border: solid 1px var(--mG-brightExtra);
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.watch-news__btn:hover, .watch-news__btn:focus {
+    outline: none;
+    box-shadow: inset 185dvh 0 0 0 var(--mG-dark);
+    color: #fff;
+}
+
+.watch-news__btn:active {
+    animation: click-btn .3s backwards;
+}
+
+/* - Subtítulos del artículo (Fecha de publicación, author). - */
+.single-info__sub-titles {
+    display: flex;
+    gap: 40px;
+}
+
+/* - Subtítulos del artículo (h5) - */
+.single-info__sub-titles h5 {
+    font-size: .7rem;
+    font-weight: 500;
+    margin: 0;
+    transition: color .1s;
+}
+
+/* - Subtítulos del artículo (span, enlace) - */
+.single-info__sub-titles h5 span, .single-info__sub-titles h5 a {
+    color: var(--mG-bright);
+}
+
+/* - Subtítulos del artículo (autor del mismo) - */
+.sub-author {
+    text-decoration: none;
+    transition: color .17s;
+}
+
+.sub-author:hover, .sub-author:focus {
+    outline: none;
+    color: var(--mG-brightExtra);
+    text-decoration: underline;
+}
+
+/* - Párrafo descriptivo del artículo -  */
+.single-info__parag {
+    font-size: .8rem;
+    margin-top: 30px;
+    font-weight: 300;
+    color: var(--mG-mid);
+    width: 93%;
+    text-align: justify;
+    transition: color .3s;
+}
+
+
+/* ✉ ♫ -_  Noticia ancha  _- ♫ ✉ */
+
+
+
+/* ✉ ♫ -_  Sección de más noticias / de interés  _- ♫ ✉ */
+
+
+.more-news__container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, 800px));
+    grid-template-rows: repeat(3, minmax(min-content, 250px));
+    justify-items: center;
+    gap: 20px;
+}
+
+/* - Artículos / contenedor - */
+.recent-info {
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 0;
+    transition: background-color .4s, padding .5s;
+}
+
+.recent-info:hover {
+    background-color: var(--mG-dark);
+    padding-bottom: 20px;
+    margin: 10px;
+}
+
+/* - Imágen del artículo - */
+.recent-info__image {
+    background: var(--mG-bright);
+    width: 300px;
+    height: 160px;
+    border-radius: 10px;
+}
+
+/* - Fecha del artículo - */
+.recent-info__dateof {
+    color: var(--mG-mid);
+    font-size: .67rem;
+    font-weight: 500;
+    margin: 10px 5px;
+    margin-bottom: 5px;
+}
+
+/* - Título / encabezado del artículo - */
+.recent-info__title {
+    font-family: 'Rozha One';
+    text-align: center;
+    font-size: 1.28rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 20px;
+    margin: 10px 0;
+    margin-top: 5px;
+    transition: color .2s;
+}
+
+/* - Subtítulos (fecha / autor) del artículo - */
+.recent-info__sub-titles {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+/* - Subtítulos (fecha / autor) del artículo (h5) - */
+.recent-info__sub-titles h5 {
+    margin: 6px;
+    font-size: .75rem;
+    font-weight: 500;
+}
+
+/* - Etiqueta / tópico del artículo y autor del mismo - */
+.sub-tag, .sub-author {
+    margin: 6px;
+    font-size: .75rem;
+    font-weight: 500;
+    transition: color .17s;
+}
+
+.sub-tag:hover, .sub-tag:focus {
+    outline: none;
+    color: var(--mG-brightExtra);
+    text-decoration: underline;
+}
+
+.sub-author:hover, .sub-author:focus {
+    outline: none;
+    color: var(--mG-brightExtra);
+    text-decoration: underline;
+}
+
+/* - Color al contenido de los subtítulos - */
+.recent-info__sub-titles a, .recent-info__sub-titles h5 span {
+    color: var(--mG-bright);
+    text-decoration: none;
+}
+
+/* - Botón 'Ver esta noticia' - */
+.t-watch-news__btn {
+    display: none;
+    color: var(--mG-dark);
+    text-decoration: none;
+    font-size: .83rem;
+    font-weight: 400;
+    margin: auto;
+    background-color: #fff;
+    border: solid 1px var(--mG-brightExtra);
+    padding: 10px;
+    width: 90%;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 15px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.t-watch-news__btn:hover, .t-watch-news__btn:focus {
+    outline: none;
+    box-shadow: inset 30em 0 0 0 var(--mG-dark);
+    color: #fff;
+}
+
+
+/* ✉ ♫ -_  Sección de más noticias / de interés  _- ♫ ✉ */
+
+
+
+/* ✉ ♫ -_  Sección de más noticias / de interés  _- ♫ ✉ */
+
+
+.news-doublet__container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, 800px));
+    justify-items: center;
+    gap: 20px;
+}
+
+/* - Artículos / contenedor - */
+.more-info {
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 0;
+    transition: background-color .4s, padding .5s;
+}
+
+.more-info:hover {
+    background-color: var(--mG-dark);
+    padding-bottom: 20px;
+    margin: 24px;
+}
+
+/* - Imágen del artículo - */
+.more-info__image {
+    background: var(--mG-bright);
+    width: 300px;
+    height: 160px;
+    border-radius: 10px;
+}
+
+/* - Fecha del artículo - */
+.more-info__dateof {
+    color: var(--mG-mid);
+    font-size: .67rem;
+    font-weight: 500;
+    margin: 10px 5px;
+    margin-bottom: 5px;
+}
+
+/* - Título / encabezado del artículo - */
+.more-info__title {
+    font-family: 'Rozha One';
+    text-align: center;
+    font-size: 1.28rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 20px;
+    margin: 10px 0;
+    margin-top: 5px;
+    transition: color .2s;
+}
+
+/* - Subtítulos (fecha / autor) del artículo - */
+.more-info__sub-titles {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+/* - Subtítulos (fecha / autor) del artículo (h5) - */
+.more-info__sub-titles h5 {
+    margin: 6px;
+    font-size: .75rem;
+    font-weight: 500;
+}
+
+/* - Etiqueta / tópico del artículo y autor del mismo - */
+.sub-tag, .sub-author {
+    margin: 6px;
+    font-size: .75rem;
+    font-weight: 500;
+    transition: color .17s;
+}
+
+.sub-tag:hover, .sub-tag:focus {
+    outline: none;
+    color: var(--mG-brightExtra);
+    text-decoration: underline;
+}
+
+.sub-author:hover, .sub-author:focus {
+    outline: none;
+    color: var(--mG-brightExtra);
+    text-decoration: underline;
+}
+
+/* - Color al contenido de los subtítulos - */
+.more-info__sub-titles a, .more-info__sub-titles h5 span {
+    color: var(--mG-bright);
+    text-decoration: none;
+}
+
+/* - Botón 'Ver esta noticia' - */
+.t-watch-news__btn {
+    display: none;
+    color: var(--mG-dark);
+    text-decoration: none;
+    font-size: .83rem;
+    font-weight: 400;
+    margin: auto;
+    background-color: #fff;
+    border: solid 1px var(--mG-brightExtra);
+    padding: 10px;
+    width: 90%;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 15px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.t-watch-news__btn:hover, .t-watch-news__btn:focus {
+    outline: none;
+    box-shadow: inset 30em 0 0 0 var(--mG-dark);
+    color: #fff;
+}
+
+
+/* ✉ ♫ -_  Sección de más noticias / de interés  _- ♫ ✉ */
+
+
+
+/* ✉ ♫ -_  Sección del footer / pie de página  _- ♫ ✉ */
+
+
+/* - Contenedor de la información legal (Términos y Condiciones, Privacidad, Contacto) - */
+.legals {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 6px;
+}
+
+/* - Contenedor de 'Privacidad' y 'Contacto' (a) - */
+.legals-b {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* - Contenedores de la info. legal (a) - */
+.legals a, .legals-b a {
+    color: #000;
+    text-decoration: none;
+    font-size: .80rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color .2s;
+}
+
+.legals a:hover, .legals a:focus {
+    color: var(--mG-bright);
+    outline: none;
+    text-decoration: underline;
+}
+
+
+
+/* Contenedor del logo y créditos */
+.logo-and-credits {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+/* - Logo 'Diario Sociedad' del footer - */
+.footer-logo {
+    display: flex;
+    width: 140px;
+    margin: auto;
+}
+
+/* - Créditos (contenedor) - */
+.credits {
+    padding: 20px;
+    text-align: center;
+}
+
+/* - Créditos (p) - */
+.credits p {
+    font-family: 'Open Sans';
+    font-weight: 500;
+    font-size: .7rem;
+    margin: 5px;
+}
+
+
+/* --> --> --> Entrando al apartado de los iconos de redes (FB, X, IG) - */
+
+
+/* - Contenedor de los iconos - */
+.container {
+    max-width: 1200px;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+}
+
+/* - Iconos - */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+/* - Iconos (a) - */
+.social-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+    transition: 0.3s ease;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
+/* - Iconos de redes (before) - */
+.social-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: 0.3s ease;
+}
+
+/* - Iconos de redes (hover::before) - */
+.social-icon:hover::before {
+    background-color: #000;
+}
+
+/* - Iconos de redes (after) - */
+.social-icon::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 60%;
+    background-color: #000;
+    transition: 0.3s ease;
+}
+
+/* - Iconos de redes (hover::after) - */
+.social-icon:hover::after {
+    background-color: #fff;
+}
+
+/* - Icono de Facebook (after) - */
+.facebook::after {
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+    mask-size: cover;
+}
+
+/* - Icono de Twitter (after) - */
+.twitter::after {
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+    mask-size: cover;
+}
+
+/* - Icono de Instagram (after) - */
+.instagram::after {
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+    mask-size: cover;
+}
+
+/* - Ya no se que es esto - */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+
+/* ✉ ♫ -_  Sección del footer / pie de página  _- ♫ ✉ */
